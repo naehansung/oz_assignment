@@ -16,15 +16,43 @@
             <fieldset>
                 <legend>개인정보</legend>
                 <label for="name">이름</label>
-                <input type="text" id="name" placeholder="이름을 입력하세요.">
+                <input type="text" id="name" placeholder="김오즈">
+                <br>
                 <label for="name">이메일</label>
-                <input type="text" id="name" placeholder="이름을 입력하세요.">
+                <input type="email" id="email" placeholder="ozcoding@naver.com">
             </fieldset>
             <fieldset>
                 <legend>설문</legend>
+
+                <P>귀하의 연령대가 어떻게 되십니까?</P>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+
+                <p>자녀의 학원선택의 기준은 무엇입니까?  (복수선택 가능)</p>
+                <input type="checkbox" id="position" name="institute">
+                <label for="location">위치</label>
+                <input type="checkbox" id="position" name="institute">
+                <label for="location">수강료</label>
+                <input type="checkbox"
+                id="cost" name="institute">
+                <label for="tutor">학원강사</label>
+                <input type="checkbox" id="infra" name="institute">
+                <label for="infra">제반시설</label>
+
             </fieldset>
             <fieldset>
                 <legend>기타의견</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
             </fieldset>
             <input type="submit">
         </Form>
