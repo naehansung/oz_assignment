@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User information</title>
+    <style>
+        #name{
+            color: red;
+        }
+        #fruit{
+            color: aqua;
+        }
+        #pet{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="name"></h1>
+    <p id="fruit"></p>
+    <p id="pet"></p>
+
+    <script>
+        const nameElement = document.querySelector("#name");
+        let name = prompt("왓츠유어네임")
+        nameElement.textContent = name
+
+        const fruitElement = document.querySelector("#fruit")
+        let fruit = prompt("최애의 과일이 무엇인가요?")
+        fruitElement.textContent = `최애의 과일은 뭐니뭐니해도 ${fruit} 입니다!`
+
+        
+        document.querySelector("#pet")
+        .textContent = `최애의 동물은 ${prompt("최애의 동물은?")}입니다!`
+    </script>
+</body>
+
+</html>
